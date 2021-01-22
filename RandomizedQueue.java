@@ -1,6 +1,6 @@
 /* *****************************************************************************
  *  Name: Courtney Hoppus
- *  Date: 2021-01-11
+ *  Date: 2021-01-15
  *  Description: Assignment 1
  **************************************************************************** */
 
@@ -31,17 +31,17 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
 
     // remove and return a random item
     public Item dequeue() {
-
+        return null;
     }
 
     // return a random item (but do not remove it)
     public Item sample() {
-
+        return null;
     }
 
     // return an independent iterator over items in random order
     public Iterator<Item> iterator() {
-
+        return null;
     }
 
     // unit testing (required)
