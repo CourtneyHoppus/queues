@@ -41,7 +41,7 @@
     <property name="ToolWindowMessages.ShowToolbar" value="false" />
     <property name="ToolWindowRun.ShowToolbar" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="settings.saveactions" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager">
     <configuration name="Deque" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -76,26 +76,30 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="102" y="111" key="#com.intellij.refactoring.encapsulateFields.EncalpsulateFieldsDialog/0.0.1280.680@0.0.1280.680" timestamp="1610750193082" />
-    <state width="772" height="169" key="GridCell.Tab.0.bottom" timestamp="1610833287859">
+    <state width="788" height="169" key="GridCell.Tab.0.bottom" timestamp="1611866353317">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="772" height="169" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1610833287859" />
-    <state width="772" height="169" key="GridCell.Tab.0.center" timestamp="1610833287859">
+    <state width="788" height="169" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1611866353317" />
+    <state width="788" height="169" key="GridCell.Tab.0.center" timestamp="1611866353317">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="772" height="169" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1610833287859" />
-    <state width="772" height="169" key="GridCell.Tab.0.left" timestamp="1610833287859">
+    <state width="788" height="169" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1611866353317" />
+    <state width="788" height="169" key="GridCell.Tab.0.left" timestamp="1611866353317">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="772" height="169" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1610833287859" />
-    <state width="772" height="169" key="GridCell.Tab.0.right" timestamp="1610833287859">
+    <state width="788" height="169" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1611866353317" />
+    <state width="788" height="169" key="GridCell.Tab.0.right" timestamp="1611866353317">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="772" height="169" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1610833287859" />
+    <state width="788" height="169" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1611866353317" />
     <state x="0" y="87" key="IDE.errors.dialog" timestamp="1610749941327">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="0" y="87" key="IDE.errors.dialog/0.0.1280.680@0.0.1280.680" timestamp="1610749941327" />
+    <state x="5" y="0" key="SettingsEditor" timestamp="1611859248257">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="5" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1611859248257" />
     <state x="60" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1610833101018">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
