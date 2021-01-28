@@ -14,8 +14,9 @@ public class Permutation {
         while (!StdIn.isEmpty()) {
             randoQ.enqueue(StdIn.readString());
         }
-        for (int idx = 0; idx < num; idx++) {
+        while (num > 0) {
             StdOut.println(randoQ.dequeue());
+            num--;
         }
     }
 }

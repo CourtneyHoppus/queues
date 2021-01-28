@@ -4,6 +4,8 @@
  *  Description: Assignment 1
  **************************************************************************** */
 
+import edu.princeton.cs.algs4.StdOut;
+
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
@@ -113,23 +115,20 @@ public class Deque<Item> implements Iterable<Item> {
         deque.addLast("Angel Baby");
         deque.addLast("Arson Nicki");
         deque.addLast("Miss Texas");
-        System.out.println();
         Iterator<String> itr = deque.iterator();
         while (itr.hasNext()) {
-            System.out.println(itr.next());
+            StdOut.println(itr.next());
         }
-        System.out.println();
-        System.out.println("Is it empty = " + deque.isEmpty());
-        System.out.println();
-        deque.removeFirst();
-        deque.removeLast();
-        System.out.println("Deque size = " + deque.size());
+        StdOut.println("Is it empty = " + deque.isEmpty());
+        StdOut.println(deque.removeFirst());
+        StdOut.println(deque.removeLast());
+        StdOut.println("Deque size = " + deque.size());
     }
 
     /* private class to create ItemNode objects */
     private class ItemNode {
-        public Item item;
-        public ItemNode prev, next;
+        private Item item;
+        private ItemNode prev, next;
 
         public ItemNode(Item item, ItemNode prev, ItemNode next) {
             this.item = item;
