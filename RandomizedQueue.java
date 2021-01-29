@@ -11,13 +11,18 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 public class RandomizedQueue<Item> implements Iterable<Item> {
+    private static final int DEFAULT_CAPACITY = 1;
     private int size;
     private Item[] items;
 
     // construct an empty randomized queue
     public RandomizedQueue() {
+        this(DEFAULT_CAPACITY);
+    }
+
+    private RandomizedQueue(int capacity) {
         size = 0;
-        items = (Item[]) new Object[1];
+        items = (Item[]) new Object[capacity];
     }
 
     // is the randomized queue empty?
@@ -49,11 +54,13 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
         }
         int randomIdx = StdRandom.uniform(size);
         Item item = items[randomIdx];
-        if (randomIdx != size) {
-            items[randomIdx] = items[size];
+        if (randomIdx != size - 1) {
+            items[randomIdx] = items[size - 1];
         }
-        items[size--] = null;
-        if (size > 0 && size == items.length / 4) {
+        // items[size - 1] = null;
+        // size--;
+        items[--size] = null;
+        if (size >= 1 && size == items.length / 4) {
             resize(items.length / 2);
         }
         return item;
@@ -82,11 +89,14 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
     }
 
     private class RandomQueueIterator implements Iterator<Item> {
-        private Item[] aux = (Item[]) new Object[items.length];
+
+        // private Item[] aux = (Item[]) new Object[size];
+        private final Item[] aux;
         private int auxSize = size;
 
         public RandomQueueIterator() {
-            for (int idx = 0; idx < items.length; idx++) {
+            aux = (Item[]) new Object[auxSize];
+            for (int idx = 0; idx < auxSize; idx++) {
                 aux[idx] = items[idx];
             }
         }
@@ -104,9 +114,12 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
             if (randomIdx != auxSize - 1) {
                 aux[randomIdx] = aux[auxSize - 1];
             }
-            aux[auxSize - 1] = null;
-            auxSize--;
+            aux[--auxSize] = null;
             return item;
+        }
+
+        public void remove() {
+            throw new UnsupportedOperationException();
         }
     }
 
@@ -122,8 +135,11 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
         StdOut.println(random.size());
         Iterator<String> itr = random.iterator();
         while (itr.hasNext()) {
-            StdOut.println(itr.next());
+            String next = itr.next();
+            // if (next != null)
+            StdOut.println(next);
         }
+        StdOut.println(random.size());
         StdOut.println("Is it empty = " + random.isEmpty());
         StdOut.println(random.sample());
         StdOut.println(random.dequeue());
