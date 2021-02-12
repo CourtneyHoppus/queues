@@ -32,7 +32,6 @@
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="false" />
     <option name="showModules" value="false" />
     <option name="sortByType" value="true" />
   </component>
@@ -43,7 +42,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Application.RandomizedQueue">
+  <component name="RunManager" selected="Application.Deque">
     <configuration name="Deque" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Deque" />
       <module name="Algorithms, Part I" />
@@ -68,9 +67,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Deque" />
         <item itemvalue="Application.RandomizedQueue" />
         <item itemvalue="Application.Permutation" />
-        <item itemvalue="Application.Deque" />
       </list>
     </recent_temporary>
   </component>
@@ -92,22 +91,22 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="102" y="111" key="#com.intellij.refactoring.encapsulateFields.EncalpsulateFieldsDialog/0.0.1280.680@0.0.1280.680" timestamp="1610750193082" />
-    <state width="788" height="169" key="GridCell.Tab.0.bottom" timestamp="1611878164181">
+    <state width="788" height="169" key="GridCell.Tab.0.bottom" timestamp="1613161195624">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="788" height="169" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1611878164181" />
-    <state width="788" height="169" key="GridCell.Tab.0.center" timestamp="1611878164181">
+    <state width="788" height="169" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1613161195624" />
+    <state width="788" height="169" key="GridCell.Tab.0.center" timestamp="1613161195624">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="788" height="169" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1611878164181" />
-    <state width="788" height="169" key="GridCell.Tab.0.left" timestamp="1611878164181">
+    <state width="788" height="169" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1613161195624" />
+    <state width="788" height="169" key="GridCell.Tab.0.left" timestamp="1613161195624">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="788" height="169" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1611878164181" />
-    <state width="788" height="169" key="GridCell.Tab.0.right" timestamp="1611878164181">
+    <state width="788" height="169" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1613161195624" />
+    <state width="788" height="169" key="GridCell.Tab.0.right" timestamp="1613161195624">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="788" height="169" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1611878164181" />
+    <state width="788" height="169" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1613161195624" />
     <state x="0" y="87" key="IDE.errors.dialog" timestamp="1610749941327">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

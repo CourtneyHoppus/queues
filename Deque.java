@@ -64,7 +64,6 @@ public class Deque<Item> implements Iterable<Item> {
         }
     }
 
-
     /* remove and return the item from the front */
     public Item removeFirst() {
         checkDeque();
@@ -115,9 +114,8 @@ public class Deque<Item> implements Iterable<Item> {
         deque.addLast("Angel Baby");
         deque.addLast("Arson Nicki");
         deque.addLast("Miss Texas");
-        Iterator<String> itr = deque.iterator();
-        while (itr.hasNext()) {
-            StdOut.println(itr.next());
+        for (String s : deque) {
+            StdOut.println(s);
         }
         StdOut.println("Is it empty = " + deque.isEmpty());
         StdOut.println(deque.removeFirst());

@@ -46,7 +46,6 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
         items[size++] = item;
     }
 
-
     // remove and return a random item
     public Item dequeue() {
         if (isEmpty()) {
@@ -57,8 +56,6 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
         if (randomIdx != size - 1) {
             items[randomIdx] = items[size - 1];
         }
-        // items[size - 1] = null;
-        // size--;
         items[--size] = null;
         if (size >= 1 && size == items.length / 4) {
             resize(items.length / 2);
@@ -90,7 +87,6 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
 
     private class RandomQueueIterator implements Iterator<Item> {
 
-        // private Item[] aux = (Item[]) new Object[size];
         private final Item[] aux;
         private int auxSize = size;
 
@@ -115,6 +111,9 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
                 aux[randomIdx] = aux[auxSize - 1];
             }
             aux[--auxSize] = null;
+            if (item == null) {
+                return next();
+            }
             return item;
         }
 
@@ -133,10 +132,7 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
         random.enqueue("Arson Nicki");
         random.enqueue("Miss Texas");
         StdOut.println(random.size());
-        Iterator<String> itr = random.iterator();
-        while (itr.hasNext()) {
-            String next = itr.next();
-            // if (next != null)
+        for (String next : random) {
             StdOut.println(next);
         }
         StdOut.println(random.size());
